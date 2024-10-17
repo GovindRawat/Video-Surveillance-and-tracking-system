@@ -10,7 +10,7 @@ from main import *
 con = sl.connect('data.db')
   
 
-my_w = tk.Tk()
+my_w = tk.
 my_w.geometry("560x300")  # Size of the window 
 my_w.title('Face Entry System')
 
@@ -47,7 +47,7 @@ def clear_text(im, but):
     roll_entry.delete(0, END)
     out.configure(text="")
     im.config(image='')
-    but.destroy()
+    but.destroy
 
 def upload_file():
     f_types = [('Jpg Files', '*.jpg')]   # type of files to select 
@@ -56,7 +56,7 @@ def upload_file():
     row=3 # start from row 3 
     for f in filename:
         img=Image.open(f) # read the image file
-        roll=roll_text.get()
+        roll=roll_text.get(
         sql = 'INSERT INTO USER (id, name, location) values(?, ?, ?)'
         data = (roll, name_text.get(), 'Main Gate')
         with con:
