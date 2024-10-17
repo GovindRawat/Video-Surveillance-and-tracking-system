@@ -1,7 +1,7 @@
 import cv2
 from simple_facerec import SimpleFacerec
 import sqlite3 as sl
-import time 
+import 
 
 def cctv():
 
